@@ -1,17 +1,28 @@
-import React from 'react'
+import React from "react";
 
 const Signup = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold text-center text-gray-800">Sign Up</h2>
+      <div className="w-full max-w-md flex flex-col items-center p-8 space-y-6 bg-white rounded-lg shadow-md">
+        <h2 className="text-3xl font-bold text-center text-gray-800">
+          Sign Up
+        </h2>
+        <img
+          className="w-[50%] object-contain rounded-full"
+          src="https://img.freepik.com/free-vector/cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37328.jpg"
+          alt="Signup page illustrations"
+        />
+
         <p className="text-sm text-center text-gray-500">
           Create your account. It’s free and only takes a minute.
         </p>
 
         <form className="mt-6 space-y-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
               Full Name
             </label>
             <input
@@ -23,7 +34,10 @@ const Signup = () => {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Email Address
             </label>
             <input
@@ -35,7 +49,10 @@ const Signup = () => {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700"
+            >
               Password
             </label>
             <input
@@ -52,7 +69,9 @@ const Signup = () => {
                 type="checkbox"
                 className="text-indigo-500 rounded focus:ring-indigo-400 focus:border-indigo-400"
               />
-              <span className="ml-2 text-sm text-gray-600">I agree to the terms and conditions</span>
+              <span className="ml-2 text-sm text-gray-600">
+                I agree to the terms and conditions
+              </span>
             </label>
           </div>
 
@@ -72,7 +91,7 @@ const Signup = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;
